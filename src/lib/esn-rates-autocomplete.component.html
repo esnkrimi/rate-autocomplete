@@ -1,0 +1,23 @@
+<div class="w-100 border text-center">
+  <div class="inner w-100">
+    <form [formGroup]="form">
+      <input class="w-100" formControlName="inputs">
+    </form>
+  </div>
+
+</div>
+<div class="w-100 text-center text-light">
+  <div *ngIf="loading===2" class="inner w-100">
+    <div class="loading loading-div" [style]="'--color:'+data.bgcolor">
+
+    </div>
+  </div>
+  <div *ngIf="loading===3" class="inner text-left bg-dark w-100">
+    <p *ngIf="result">
+      <a target="_blank" class="text-light" [href]="data.baseUrl+'/'+select">
+        {{result}}
+      </a>
+    </p>
+  </div>
+
+</div>

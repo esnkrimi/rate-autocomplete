@@ -1,0 +1,22 @@
+.inner{
+    display: inline-block;
+}
+    
+.loading{
+    height: 1px;
+    animation: loading 1s forwards;
+}
+@keyframes loading {
+    0%{
+        width: 2%;
+        opacity: 20%;
+    }
+    100%{
+        width: 100%;
+        opacity: 100%;
+
+    }
+}
+.loading-div{
+    background-color: var(--color);
+}
